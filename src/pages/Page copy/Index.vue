@@ -1,5 +1,14 @@
 <template>
-  <div class="page" v-if="data !== ''"></div>
+  <div class="page">
+    <LeftMenu class="left" @item="emit($event, 'onMenu')" :tabIndex="Ldata.tabIndex" />
+    <List
+      class="right"
+      :scrollInto="Ldata.scrollInto"
+      @scroll="emit($event,'onScroll')"
+      @scrollTouch="emit($event,'onScrollTouch')"
+      :isScroll="Ldata.isScroll"
+    />
+  </div>
 </template>
 <script lang="ts">
 import { Vue, Component, Mixins } from "vue-property-decorator";
@@ -7,8 +16,11 @@ import DData from "./Data";
 import NData, { Param, Data } from "./NData";
 import Logic from "./Logic";
 import BaseVue from "@qjk/npm-pack/dist/core/base/BaseVue";
+import LeftMenu from "./_components/LeftMenu.vue";
+import List from "./_components/List.vue";
+
 @Component({
-  components: {}
+  components: { LeftMenu, List }
 })
 export default class Index extends Mixins(BaseVue) {
   logic = new Logic();
@@ -27,5 +39,17 @@ export default class Index extends Mixins(BaseVue) {
   align-items: center;
   width: 750px;
   margin-bottom: 40px;
+  position: relative;
+}
+.left {
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.right {
+  width: 540px;
+  margin-left: 210px;
 }
 </style>

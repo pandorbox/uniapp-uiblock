@@ -1,7 +1,7 @@
 {
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "demo-one",
+    "navigationBarTitleText": "demo-ui",
     "navigationBarBackgroundColor": "#ccc",
     "backgroundColor": "#ccc"
   },
@@ -18,20 +18,8 @@
         "selectedIconPath": "/static/ic-tabbar-home-a.png"
       },
       {
-        "pagePath": "pages/Note/Index",
-        "text": "笔记",
-        "iconPath": "/static/ic-tabbar-detail.png",
-        "selectedIconPath": "/static/ic-tabbar-detail-a.png"
-      },
-      {
-        "pagePath": "pages/News/Index",
-        "text": "消息",
-        "iconPath": "/static/ic-tabbar-news.png",
-        "selectedIconPath": "/static/ic-tabbar-news-a.png"
-      },
-      {
-        "pagePath": "pages/Me/Index",
-        "text": "我的",
+        "pagePath": "pages/Page/Index",
+        "text": "page",
         "iconPath": "/static/ic-tabbar-me.png",
         "selectedIconPath": "/static/ic-tabbar-me-a.png"
       }
@@ -45,75 +33,17 @@
       }
     },
     {
-      "path": "pages/News/Index",
+      "path": "pages/Page/Index",
       "style": {
-        "navigationBarTitleText": "消息"
-      }
-    },
-    {
-      "path": "pages/Note/Index",
-      "style": {
-        "navigationBarTitleText": "笔记"
-      }
-    },
-    {
-      "path": "pages/Me/Index",
-      "style": {
-        "navigationBarTitleText": "个人中心"
+        "navigationBarTitleText": "page"
       }
     }
   ],
-  "subPackages": [
-    {
-      "root": "pkgAccount",
-      "pages": [
-        {
-          "path": "pages/Login/Index",
-          "style": {
-            "navigationBarTitleText": "登录",
-            "enablePullDownRefresh": false
-          }
-        },
-        {
-          "path": "pages/Registe/Index",
-          "style": {
-            "navigationBarTitleText": "注册",
-            "enablePullDownRefresh": false
-          }
-        }
-      ]
-    },
-    {
-      "root": "pkgNote",
-      "pages": [
-        {
-          "path": "pages/AddNote/Index",
-          "style": {
-            "navigationBarTitleText": "添加笔记",
-            "enablePullDownRefresh": false
-          }
-        },
-        {
-          "path": "pages/NoteDetail/Index",
-          "style": {
-            "navigationBarTitleText": "笔记详情",
-            "enablePullDownRefresh": false
-          }
-        },
-        {
-          "path": "pages/NoteClassList/Index",
-          "style": {
-            "navigationBarTitleText": "笔记列表",
-            "enablePullDownRefresh": false
-          }
-        }
-      ]
-    }
-  ],
+  "subPackages": [],
   "preloadRule": {
     "pages/Home/Index": {
       "network": "all",
-      "packages": ["pkgAccount", "pkgNote"]
+      "packages": []
     }
   }
 }
