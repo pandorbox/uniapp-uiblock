@@ -12,7 +12,7 @@ export class Data extends BaseData {
     super();
     this.needLogin = false;
     this.web = false;
-    this.scrollInto = "items-0";
+    this.scrollInto = "itemStart0";
     this.tabIndex = 0;
     this.isScroll = false;
   }
