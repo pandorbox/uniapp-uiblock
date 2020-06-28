@@ -19,10 +19,9 @@ import Logic from "./Logic";
 import BaseVue from "@qjk/npm-pack/dist/core/base/BaseVue";
 import LeftMenu from "./_components/LeftMenu.vue";
 import List from "./_components/List.vue";
-import Demo from "./_components/Demo.vue";
 
 @Component({
-  components: { LeftMenu, List, Demo }
+  components: { LeftMenu, List }
 })
 export default class Index extends Mixins(BaseVue) {
   logic = new Logic();
