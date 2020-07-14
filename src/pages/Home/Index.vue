@@ -1,5 +1,8 @@
 <template>
-  <div class="page" v-if="data !== ''"></div>
+  <div class="page">
+    <text>{{DData.tabs}}</text>
+    <Render :blocks="Ldata.uData" />
+  </div>
 </template>
 <script lang="ts">
 import { Vue, Component, Mixins } from "vue-property-decorator";
@@ -7,8 +10,9 @@ import DData from "./Data";
 import NData, { Param, Data } from "./NData";
 import Logic from "./Logic";
 import BaseVue from "@qjk/npm-pack/dist/core/base/BaseVue";
+import Render from "../Blocks/Render/index.vue";
 @Component({
-  components: {}
+  components: { Render }
 })
 export default class Index extends Mixins(BaseVue) {
   logic = new Logic();
