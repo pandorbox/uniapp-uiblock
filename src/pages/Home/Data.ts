@@ -6,8 +6,20 @@ export default {
   ],
   blocks: [
     {
+      name: "",
       blockTag: "Cell",
-      data: {}
+      attrs: {
+        styleType: "default",
+        data: [0]
+      }
+    },
+    {
+      name: "",
+      blockTag: "Notic",
+      attrs: {
+        styleType: "default",
+        data: [0]
+      }
     }
   ]
 };

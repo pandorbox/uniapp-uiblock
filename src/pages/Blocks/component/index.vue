@@ -6,7 +6,7 @@
 <script>
 import Default from "./default/index.vue";
 export default {
-  name: "component",
+  name: "Ucomponent",
   props: {
     block: {
       type: Object,

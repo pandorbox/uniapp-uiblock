@@ -2,16 +2,19 @@
   <div class="component">
     <div v-for="(block,index) in blocks" :key="index">
       <Ucell v-if="block.blockTag=='Cell'" :block="block" />
+      <Unotic v-if="block.blockTag=='Notic'" :block="block" />
     </div>
   </div>
 </template>
 <script>
 import Ucell from "../u-cell/index.vue";
+import Unotic from "../u-notic/index.vue";
 import { Component } from "vue-property-decorator";
 export default {
   name: "Render",
   components: {
-    Ucell
+    Ucell,
+    Unotic
   },
   props: {
     /** 配置 */

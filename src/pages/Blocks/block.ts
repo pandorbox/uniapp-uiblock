@@ -1,8 +1,8 @@
 export default class Block {
   blockTag: string;
-  data: Object;
+  attrs: object;
   constructor() {
     this.blockTag = "";
-    this.data = "";
+    this.attrs = {};
   }
 }
