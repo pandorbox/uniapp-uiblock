@@ -1,8 +1,10 @@
 <template>
-  <div class="component" :style="blockStyle"></div>
+  <div class="component" :style="blockStyle">
+    <text>Notic组件</text>
+  </div>
 </template>
 <script>
-import mixins from "../../mixins";
+import mixins from "../../../mixins";
 export default {
   mixins: [mixins],
   props: {

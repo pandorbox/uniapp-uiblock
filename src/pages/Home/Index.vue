@@ -10,7 +10,7 @@ import DData from "./Data";
 import NData, { Param, Data } from "./NData";
 import Logic from "./Logic";
 import BaseVue from "@qjk/npm-pack/dist/core/base/BaseVue";
-import Render from "../Blocks/Render/index.vue";
+import Render from "../UBlocks/Render/index.vue";
 @Component({
   components: { Render }
 })

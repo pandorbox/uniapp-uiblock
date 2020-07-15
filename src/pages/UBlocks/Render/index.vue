@@ -7,8 +7,8 @@
   </div>
 </template>
 <script>
-import Ucell from "../u-cell/index.vue";
-import Unotic from "../u-notic/index.vue";
+import Ucell from "../blocks/u-cell/index.vue";
+import Unotic from "../blocks/u-notic/index.vue";
 import { Component } from "vue-property-decorator";
 export default {
   name: "Render",

@@ -1,10 +1,8 @@
 <template>
-  <div class="component" :style="blockStyle">
-    <text>Cell组件</text>
-  </div>
+  <div class="component" :style="blockStyle"></div>
 </template>
 <script>
-import mixins from "../../mixins";
+import mixins from "../../../mixins";
 export default {
   mixins: [mixins],
   props: {

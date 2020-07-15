@@ -2,7 +2,7 @@ import BaseLogic, { Data as BaseData } from "@qjk/npm-pack/dist/core/base/BaseLo
 import NetData from "./NData";
 import User from "@qjk/npm-pack/dist/core/item/userInfo";
 import Udata from "./Data";
-import Block from "../Blocks/block";
+import Block from "../UBlocks/block";
 export class Data extends BaseData {
   /** web */
   web: boolean;
