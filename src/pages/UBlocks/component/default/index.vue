@@ -1,7 +1,5 @@
 <template>
-  <div class="components" :style="blockStyle">
-    <text>Notic组件</text>
-  </div>
+  <div class="component" :style="blockStyle"></div>
 </template>
 <script>
 import mixins from "../../mixins";

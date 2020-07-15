@@ -7,6 +7,7 @@
 import Default from "./default/index.vue";
 export default {
   name: "Ucomponent",
+  components: { Default },
   props: {
     block: {
       type: Object,
@@ -24,6 +25,9 @@ export default {
 
 <style scoped>
 .component {
-  width: 750rpx;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

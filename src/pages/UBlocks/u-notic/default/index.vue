@@ -1,6 +1,6 @@
 <template>
-  <div class="components" :style="blockStyle">
-    <text>Cell组件</text>
+  <div class="component" :style="blockStyle">
+    <text>Notic组件</text>
   </div>
 </template>
 <script>
