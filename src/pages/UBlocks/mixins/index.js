@@ -10,25 +10,23 @@ export default {
         return {};
       }
     },
-    /** 块组 */
-    blocks: {
-      type: Array,
+    /** 块 */
+    block: {
+      type: Object,
       default: () => {
-        return [];
+        return {};
       }
     }
   },
   computed: {
-    /** 区块 */
-    uBlocks() {
-      if (!this.blocks || !this.blocks.length) return [];
-      return this.blocks;
-    },
-    /** 区块style */
+    /** 块style */
     blockStyle() {
-      if (!this.config || !this.config.bgColor) return {};
+      if (!this.block) return {};
       return this.styles({
-        backgroundColor: this.config.bgColor
+        backgroundColor: this.block.bgColor ? this.block.bgColor : "#fff",
+        width: this.block.width ? this.block.width + "rpx" : "750rpx",
+        height: this.block.height ? this.block.height + "rpx" : "null",
+        borderRadius: this.block.bdRadius ? this.block.bdRadius + "rpx" : 0
       });
     },
     /**
@@ -49,12 +47,6 @@ export default {
         return false;
       }
       return true;
-    },
-    /**
-     * 区块高度
-     */
-    blockHeight() {
-      return this.attrs && this.attrs.height ? parseInt(this.attrs.height) : 0;
     }
   },
   created() {},

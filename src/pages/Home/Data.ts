@@ -8,6 +8,9 @@ export default {
     {
       name: "",
       blockTag: "Cell",
+      width: 690,
+      bgColor: "#ccc",
+      bdRadius: 10,
       attrs: {
         styleType: "default",
         data: [0]

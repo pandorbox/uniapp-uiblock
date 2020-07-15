@@ -1,6 +1,5 @@
 <template>
   <div class="page">
-    <text>{{DData.tabs}}</text>
     <Render :blocks="Ldata.uData" />
   </div>
 </template>

@@ -25,6 +25,9 @@ export default {
 
 <style scoped>
 .component {
-  width: 750rpx;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

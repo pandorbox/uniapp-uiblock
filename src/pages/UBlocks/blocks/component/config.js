@@ -6,13 +6,15 @@ export default {
     iconSrc: "", // 图标资源地址
     iconSize: 30, // 图标大小
     fontSize: 30, // 字体大小
-    textColor: "#333", // 文本颜色
-    backgroundColor: "#fff", // 背景色
+    textColor: "", // 文本颜色
+    bgColor: "#fff", // 背景色
+    width: "", // 宽度
+    height: "", // 高度
+    bdRadius: 0, // 圆角
     dataSchemeUrl: "data-scheme://", // 数据协议
     data: [
       {
-        schemeUrl: "", // 协议
-        title: "" // 标题
+        schemeUrl: "" // 协议
       }
     ]
   }
