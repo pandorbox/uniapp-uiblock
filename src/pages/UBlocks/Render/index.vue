@@ -3,18 +3,21 @@
     <div v-for="(block,index) in blocks" :key="index">
       <Ucell v-if="block.blockTag=='Cell'" :block="block" />
       <Unotic v-if="block.blockTag=='Notic'" :block="block" />
+      <Ubanner v-if="block.blockTag=='Banner'" :block="block" />
     </div>
   </div>
 </template>
 <script>
+import { Component } from "vue-property-decorator";
 import Ucell from "../blocks/u-cell/index.vue";
 import Unotic from "../blocks/u-notic/index.vue";
-import { Component } from "vue-property-decorator";
+import Ubanner from "../blocks/u-banner/index.vue";
 export default {
   name: "Render",
   components: {
     Ucell,
-    Unotic
+    Unotic,
+    Ubanner
   },
   props: {
     /** 配置 */

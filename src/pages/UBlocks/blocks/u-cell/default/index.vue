@@ -8,7 +8,7 @@ import mixins from "../../../mixins";
 export default {
   mixins: [mixins],
   props: {
-    block: {
+    attrs: {
       type: Object,
       default: {}
     }

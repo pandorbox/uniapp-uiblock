@@ -10,8 +10,7 @@ export default {
         return {};
       }
     },
-    /** 块 */
-    block: {
+    attrs: {
       type: Object,
       default: () => {
         return {};
@@ -23,10 +22,10 @@ export default {
     blockStyle() {
       if (!this.block) return {};
       return this.styles({
-        backgroundColor: this.block.bgColor ? this.block.bgColor : "#fff",
-        width: this.block.width ? this.block.width + "rpx" : "750rpx",
-        height: this.block.height ? this.block.height + "rpx" : "null",
-        borderRadius: this.block.bdRadius ? this.block.bdRadius + "rpx" : 0
+        backgroundColor: this.attrs.bgColor ? this.attrs.bgColor : "#fff",
+        width: this.attrs.width ? this.attrs.width + "rpx" : "750rpx",
+        height: this.attrs.height ? this.attrs.height + "rpx" : "null",
+        borderRadius: this.attrs.bdRadius ? this.attrs.bdRadius + "rpx" : 0
       });
     },
     /**

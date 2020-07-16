@@ -1,6 +1,6 @@
 <template>
   <div class="component" v-if="block.attrs && block.attrs.data && block.attrs.data.length > 0">
-    <Default :block="block" v-if="block.attrs.styleType == 'default'" />
+    <Default :attrs="block.attrs" v-if="block.attrs.styleType == 'default'" />
   </div>
 </template>
 <script>
