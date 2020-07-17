@@ -49,7 +49,6 @@ export default {
 .component {
   display: flex;
   flex-direction: column;
-  width: 750rpx;
   align-items: center;
 }
 .swiper {

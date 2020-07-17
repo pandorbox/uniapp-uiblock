@@ -62,10 +62,14 @@ export default {
         textColor: "", // 文本颜色
         bgColor: "#fff", // 背景色
         width: "", // 宽度
-        height: "", // 高度
+        height: "400", // 高度
         bdRadius: 0, // 圆角
         dataSchemeUrl: "data-scheme://", // 数据协议
         data: [
+          {
+            schemeUrl: "", // 协议
+            imageSrc: "http://www.baidu.com/img/bdlogo.png"
+          },
           {
             schemeUrl: "", // 协议
             imageSrc: "http://www.baidu.com/img/bdlogo.png"
