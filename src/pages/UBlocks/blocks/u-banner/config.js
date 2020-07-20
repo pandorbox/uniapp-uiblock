@@ -14,7 +14,8 @@ export default {
     dataSchemeUrl: "data-scheme://", // 数据协议
     data: [
       {
-        schemeUrl: "" // 协议
+        schemeUrl: "", // 协议
+        imageSrc: "" // 图片地址
       }
     ]
   }

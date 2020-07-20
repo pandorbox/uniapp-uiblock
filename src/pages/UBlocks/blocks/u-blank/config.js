@@ -1,5 +1,5 @@
 export default {
-  name: "",
+  name: "空白",
   blockTag: "Blank", // 块唯一标记
   attrs: {
     styleType: "default", // 风格类型(default:默认)
