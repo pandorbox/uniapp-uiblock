@@ -10,7 +10,7 @@ export default {
         fontSize: 30, // 字体大小
         textColor: "", // 文本颜色
         bgColor: "#fff", // 背景色
-        width: "", // 宽度
+        width: "200", // 宽度
         height: "", // 高度
         bdRadius: 0, // 圆角
         dataSchemeUrl: "data-scheme://", // 数据协议
@@ -48,7 +48,7 @@ export default {
         fontSize: 30, // 字体大小
         textColor: "", // 文本颜色
         bgColor: "#fff", // 背景色
-        width: "", // 宽度
+        width: "690", // 宽度
         height: "", // 高度
         bdRadius: 0, // 圆角
         dataSchemeUrl: "data-scheme://", // 数据协议
