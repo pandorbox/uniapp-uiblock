@@ -20,7 +20,7 @@ export default {
   computed: {
     /** 块style */
     blockStyle() {
-      if (!this.block) return {};
+      if (!this.attrs) return {};
       return this.styles({
         backgroundColor: this.attrs.bgColor ? this.attrs.bgColor : "#fff",
         width: this.attrs.width ? this.attrs.width + "rpx" : "750rpx",
